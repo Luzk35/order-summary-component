@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -102,5 +102,5 @@ button.disagree-button:hover {
 }
 
 .attribution {
-  padding: 2%;
+  padding: 4%;
 }
