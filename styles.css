@@ -23,11 +23,12 @@ body {
 .card {
   border-radius: 30px;
   margin-top: 5%;
+  margin-bottom: 10%;
   width: min-content;
 }
 
 .description {
-  width: 50% !important;
+  width: 70% !important;
   color: hsl(224, 23%, 55%);
 }
 
@@ -35,7 +36,7 @@ body {
   padding: 5%;
   border-radius: 15px;
   background-color: hsl(225, 100%, 98%);
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 
 .photo {
@@ -57,6 +58,11 @@ body {
   font-weight: 900;
 }
 
+a.plan-change:hover {
+  color: #857fe0;
+  text-decoration: none;
+}
+
 button:focus {
   border: none;
   outline: none;
@@ -65,27 +71,26 @@ button:focus {
 button {
   border-radius: 15px;
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   border: none;
 }
 
 .agree-button {
-  width: 90%;
+  width: 79%;
   padding: 3%;
-  box-shadow: 1px 10px 15px hsl(224, 23%, 55%);
+  box-shadow: 1px 5px 15px hsl(224, 23%, 55%);
   background-color: hsl(245, 75%, 52%);
   color: white;
   margin-bottom: 7%;
 }
 
 button.agree-button:hover {
-  background-color: hsl(225, 100%, 98%);
-  color: hsl(223, 47%, 23%);
+  background-color: #766cf1;
+  color: white;
 }
 
 button.disagree-button:hover {
-  background-color: hsl(223, 47%, 23%);
-  color: white;
+  color: hsl(223, 47%, 23%);
 }
 
 .disagree-button {
@@ -103,4 +108,40 @@ button.disagree-button:hover {
 
 .attribution {
   padding: 4%;
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    width: 80% !important;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .general {
+    background: url("/images/pattern-background-mobile.svg");
+    background-position: top;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+  }
+
+  .agree-button {
+    width: 93%;
+    padding: 3%;
+    box-shadow: 1px 5px 15px hsl(224, 23%, 55%);
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin-bottom: 7%;
+  }
+
+  .card {
+    border-radius: 30px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: min-content;
+  }
+
+  .photo {
+    width: 350px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
 }
