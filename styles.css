@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap);
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.general {
+  background: url("/images/pattern-background-desktop.svg");
+  background-position: top;
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+}
+
+.col-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+}
+
+.card {
+  border-radius: 30px;
+  margin-top: 5%;
+  width: min-content;
+}
+
+.description {
+  width: 50% !important;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  padding: 5%;
+  border-radius: 15px;
+  background-color: hsl(225, 100%, 98%);
+  margin-bottom: 5%;
+}
+
+.photo {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.plan-title {
+  font-weight: 900;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button {
+  border-radius: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  border: none;
+}
+
+.agree-button {
+  width: 90%;
+  padding: 3%;
+  box-shadow: 1px 10px 15px hsl(224, 23%, 55%);
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  margin-bottom: 7%;
+}
+
+button.agree-button:hover {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(223, 47%, 23%);
+}
+
+button.disagree-button:hover {
+  background-color: hsl(223, 47%, 23%);
+  color: white;
+}
+
+.disagree-button {
+  width: 60%;
+  padding: 2%;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 5% 0% 2% 0%;
+}
+
+.attribution {
+  padding: 2%;
+}
