@@ -4,7 +4,176 @@ body {
   font-family: "Red Hat Display", sans-serif;
   justify-content: center;
   align-items: center;
+  
 }
+
+/* @media (max-width: 1440px) {
+  body { font-size: 16px; }
+}
+
+@media (min-width: 375px) {
+  body { font-size: 13px; }
+}
+   */
+
+.cardPrincipal{
+  height: auto;
+}
+
+
+
+
+.card{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  
+}
+
+.card-img-top{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+ .container{
+  max-width: 364px;
+  padding-top: 4%;
+ }
+
+ .card-title{
+  padding-top: 6px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%) ;
+  font-size: 19px;
+
+  
+ }
+
+ .card-text{
+  font-size: 12px;
+  color: hsl(224, 23%, 55%);
+  padding: 20px;
+  padding-top: 1px;
+  padding-bottom: 2px;  
+ }
+
+ .card-text2{
+  font-size: 12px;
+  color: rgba(118,108,241,255);
+  padding: 20px;
+  padding-top: 1px;
+  padding-bottom: 2px;  
+ }
+
+.general{
+  height: auto;
+}
+
+.titRecuadro{
+  /* position: static;        recordar que este viene por defecto ...creo*/
+  
+  position: relative;
+  bottom: 17px;
+  left: 62px;
+  font-size: 11px;
+  
+}
+
+.titNegrilla{
+  /* position: relative; */
+  color: hsl(223, 47%, 23%);
+  padding-top: 32px;
+  font-weight: 900;
+  font-size: 11px;
+
+  
+  
+}
+
+.textSecundario{
+  position: relative;
+  color: hsl(224, 23%, 55%);
+  bottom: 4px;
+  padding-top: 4px;
+
+
+}
+
+
+.caja3{
+  text-align: left;
+  /* box-sizing: content-box; */
+  width: 100%;
+  /* border: solid #5B6DCD 10px; */
+  padding: 5px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px 10px 10px 10px;
+  height: 71px;
+  width: 250px;
+  /* font-size: 12px; */
+  /* position: static; */
+  align-items: center;
+}
+
+.iconoMusic {
+  /* display: flex;
+  align-items: center; */
+  /* top: 14px; 
+  left: 10px; */
+  position: fixed;  
+  height: 35px;
+  margin: 13px 7px auto;
+  
+
+
+}
+
+.boton1{
+  position: relative;
+  left: 181px;
+  right: 17px;
+  bottom: 47px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.boton1:hover{
+  cursor: pointer;
+  color: rgba(118,108,241,255);
+}
+
+
+
+/* .circulo{
+  box-sizing: content-box;  width: 100%;  padding: 5px;
+  background-color: rgba(225,232,250,255);  border-radius: 20px 20px 20px 20px;
+  height: 30px;  width:  30px;   font-size: 13px;
+  position: relative;   left: 10px;   top: 14px; 
+} */
+
+.btn {
+background-color: hsl(245, 75%, 52%);
+border-color: none;
+font-size: 11px;
+width: 250px;
+height: 38px;
+font-weight: 700;
+border-radius: 10px 10px 10px 10px;
+padding-top: 10px;
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 3px 3px 14px hsl(249, 60%, 79%);
+border: 0px;
+}
+.btn:hover{
+  background-color:rgba(118,108,241,255) ;
+}
+
+
 
 .general {
   background: url("/images/pattern-background-desktop.svg");
@@ -13,135 +182,55 @@ body {
   background-repeat: no-repeat;
 }
 
-.col-center {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center;
+.boton3{
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
-
-.card {
-  border-radius: 30px;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  width: min-content;
-}
-
-.description {
-  width: 70% !important;
+.btn3{
+  background-color: transparent;
   color: hsl(224, 23%, 55%);
-}
-
-.plan {
-  padding: 5%;
-  border-radius: 15px;
-  background-color: hsl(225, 100%, 98%);
-  margin-bottom: 7%;
-}
-
-.photo {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.plan-title {
+  border: none;
+  font-size: 11px;
   font-weight: 900;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
-
-.plan-price {
-  color: hsl(224, 23%, 55%);
-}
-
-.plan-change {
-  color: hsl(245, 75%, 52%);
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-a.plan-change:hover {
-  color: #857fe0;
+a.btn3{
   text-decoration: none;
 }
 
-button:focus {
-  border: none;
-  outline: none;
-}
-
-button {
-  border-radius: 15px;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  border: none;
-}
-
-.agree-button {
-  width: 79%;
-  padding: 3%;
-  box-shadow: 1px 5px 15px hsl(224, 23%, 55%);
-  background-color: hsl(245, 75%, 52%);
-  color: white;
-  margin-bottom: 7%;
-}
-
-button.agree-button:hover {
-  background-color: #766cf1;
-  color: white;
-}
-
-button.disagree-button:hover {
+.btn3:hover{
   color: hsl(223, 47%, 23%);
 }
 
-.disagree-button {
-  width: 60%;
-  padding: 2%;
-  background-color: white;
-  color: hsl(224, 23%, 55%);
+
+
+
+
+
+
+ /*    °°° FONDO °°°      */
+
+ svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container2 {
+  display: inline-block;
+  /* position: absolute; */
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+body {
+  overflow: hidden;
 }
 
-.title {
-  font-size: 28px;
-  font-weight: 900;
-  padding: 5% 0% 2% 0%;
-}
-
-.attribution {
-  padding: 4%;
-}
-
-@media screen and (max-width: 375px) {
-  .description {
-    width: 80% !important;
-    color: hsl(224, 23%, 55%);
-  }
-
-  .general {
-    background: url("/images/pattern-background-mobile.svg");
-    background-position: top;
-    background-color: hsl(225, 100%, 94%);
-    background-repeat: no-repeat;
-  }
-
-  .agree-button {
-    width: 93%;
-    padding: 3%;
-    box-shadow: 1px 5px 15px hsl(224, 23%, 55%);
-    background-color: hsl(245, 75%, 52%);
-    color: white;
-    margin-bottom: 7%;
-  }
-
-  .card {
-    border-radius: 30px;
-    margin-top: 20%;
-    margin-bottom: 10%;
-    width: min-content;
-  }
-
-  .photo {
-    width: 350px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-  }
-}
+/*  sacado de:
+https://barcelonageeks.com/como-crear-una-imagen-de-onda-para-un-fondo-usando-html-y-css/ */
