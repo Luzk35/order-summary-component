@@ -27,18 +27,34 @@
             <h2 class="main__title">Hello Again!</h2>
             <p class="main__paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-            <form class="main__form">
-
-                <!-- <input type="text" placeholder="Enter a username" class="main__input">
-
-                <input type="password" placeholder="Password" class="main__input"> -->
-
-                <input type="submit" value="Anual Plan" class="main__input main__input--send">
-                <input type="submit" value="Monthy Plan" class="main__input main__input--send">
-                <input type="submit" value="Week Plan" class="main__input main__input--send">
+     <!--                order.html                                                                                                     -->
+            <form action="order.html" class="main__form" id="botonesPlan" method="" >
 
                 
+                <!-- usar cokkies  ... o  -->
 
+           <!-- BORRAR EN EL CSS <input type="text" placeholder="Enter a username" class="main__input">
+                <input type="password" placeholder="Password" class="main__input"> -->  
+                
+                
+                <!-- <input type="submit" value="Anual Plan" class="main__input main__input--send" id="AnualPlan"  >
+                <input type="submit" value="Monthy Plan"class="main__input main__input--send" id="MonthyPlan" >
+                <input type="button" value="Week Plan"  class="main__input main__input--send" id="WeekPlan"   >     -->
+                
+                <!-- onclick innerHTML -->
+                <button class="main__input main__input--send" type="submit" id= "AnualPlan"   > Anual Plan </button>
+                <button class="main__input main__input--send" type="submit" id= "MonthyPlan"   > Monthy Plan  </button>
+                <button class="main__input main__input--send" type="submit" id= "WeekPlan" > Week Plan </button> 
+             
+                 <!-- <script>
+                    document.getElementById("AnualPlan").addEventListener("click", AnualPlan);
+                    document.getElementById("MonthyPlan").addEventListener("click", MonthyPlan);
+                    document.getElementById("WeekPlan").addEventListener("click", WeekPlan);
+                     -->
+                 
+                <!-- </script>  -->
+     
+            
             </form>
 
             <!-- <p class="main__paragraph">Or continue with</p>
@@ -80,8 +96,9 @@
 <!--  °°°°°°°°°°°°°°°°°°°°°  -->
 
 
-
-
 </body>
+
+
+<script src="app.js"></script>
 
 </html>
