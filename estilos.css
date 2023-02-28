@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
 
+
+
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     min-height: 600px;
     padding: 80px 0;
-    /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
     background-color: #c3c8ff;
     background-repeat: no-repeat;
-
     display: flex;
 }
 
@@ -62,6 +66,8 @@ body{
     gap: 1.5em;
     padding: 3em .7em;
     text-align: center;
+    place-content: center;
+
 }
 
 .main__form{
@@ -71,53 +77,73 @@ body{
 }
 
 .main__input{
-    width: 80%;
+    width: 55%;
     max-width: 500px;
     outline: none;
     border: none;
-    padding: 1em;
+    /* padding: 1em; */
     font: inherit;
     border-radius: .6em;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.cont{
+    width: 80%;
+    /* place-content: center; */
+    margin: auto 10% 5%;
+
+}
+
+.container-image{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr 1;
+    justify-content: center;
+    place-self: center;
+    
 }
 
 .main__input--send{
     background-color: rgba(106,118,254,255);
     color: #fff;
     font-weight: 600;
+    text-align: center;
+    align-items: center;
+
+}
+
+.ImgBoton{
+    /* display: grid; */
+
+    height: 50px;
+    width: 50px;
+    /* margin: top 0; */
+    /* margin-bottom: ; */
+    /* margin-left: 0; */
+    margin-right: 35px;
+    position: inherit;
+
+}
+.d-flex{
+    display: flex;
 }
 
 .main__title{
     font-size: 2.3rem;
+    color: rgba(35,47,59,255);
 }
 
 .main__paragraph{
     margin: .3em 0;
+    color: #6D6DC9;
+    
 }
-
-
-.main__social{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    grid-auto-columns: max-content;
-    gap: 1em;
-}
-
-.main__link{
-    border: 1px solid #fff;
-    border-radius: 10px;
-    padding: .6em 1.5em;
-}
-
-.main__link:hover{
-    background-color: #fff;
-}
-
-.main__icon{
-    width: 30px;
-    height: 30px;
-}
-
 
 
 
@@ -146,3 +172,11 @@ body{
   
   /*  sacado de:
   https://barcelonageeks.com/como-crear-una-imagen-de-onda-para-un-fondo-usando-html-y-css/ */
+
+
+
+
+.column-image{
+    position: relative;
+    justify-content: 0;
+}

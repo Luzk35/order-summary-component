@@ -4,17 +4,21 @@ body {
   font-family: "Red Hat Display", sans-serif;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  animation: mostrar2 1.5s ease-in-out;
   
 }
 
-/* @media (max-width: 1440px) {
-  body { font-size: 16px; }
-}
 
-@media (min-width: 375px) {
-  body { font-size: 13px; }
+@keyframes mostrar2 {
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+      opacity: 1;
+  }
 }
-   */
 
 .cardPrincipal{
   height: auto;
@@ -94,7 +98,7 @@ body {
   
 }
 
-.textSecundario{
+.textSecundary{
   position: relative;
   color: hsl(224, 23%, 55%);
   bottom: 4px;
@@ -228,9 +232,7 @@ a.btn3{
   top: 0;
   left: 0;
 }
-body {
-  overflow: hidden;
-}
+
 
 /* fondo sacado de:
 https://barcelonageeks.com/como-crear-una-imagen-de-onda-para-un-fondo-usando-html-y-css/ */

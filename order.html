@@ -7,8 +7,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      crossorigin="anonymous"   
+
     />
+
 
     <link
       rel="icon"
@@ -36,19 +38,24 @@
           <img src="images/illustration-hero.svg" class="card-img-top" alt="music">
           <div class="card-body" >
             <h5 class="card-title">Order summary</h5>
-            <p class="card-text">  You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <p class="card-text">  It is not long before you enjoy a wide variety of music !!!</p>
             
                   <div class="caja3 mx-auto">
                       <img src="images/icon-music.svg" alt="iconMusic" class="iconoMusic">
                       <!-- <div class="circulo"> </div> -->
                       <div class="titRecuadro">
+
+                        <!-- --------------------------------------------------- -->
                         
                          <div class="titNegrilla" id="traerRespuesta"> 
-                          <script>  document.getElementById("traerRespuesta").innerHTML = document.cookie ;
-                          </script>
-                                                     </div>                                                      <!-- heeeeeeeeeeeerreeeee -->
+                                  <script>  document.getElementById("traerRespuesta").innerHTML = document.cookie ;</script>
+                          </div>                            
+                        <!-- --------------------------------------------------- -->
                         
-                         <div class="textSecundario"> $59.99/year </div>                     
+                         <div class="textSecundary" id="priceCategory">                              
+                              </div>  
+                         
+                         
                       </div>
                       <a href="index.html" class="boton1"> Change</a>
                   </div>
@@ -86,10 +93,9 @@
 
 <!--  °°°°°°°°°°°°°°°°°°°°°  -->
 
-<script src="app.js">
-  // let obtenerCookies = document.cookie;
-  // console.log(obtenerCookies);
-</script>
+<script src="app.js"> </script>
+
+<script src="JS-order.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -15,6 +15,7 @@
 //     console.log (prueba);
 //     return prueba;
 
+// 
 // }
 
 // const btn = document.querySelectorAll("button");
@@ -22,13 +23,18 @@
 const botones = document.querySelectorAll("button");
 
 botones.forEach(boton => boton.addEventListener("click", ()=>{
-    let planName = boton.id;
+    // let planName = boton.id;
+    let planName = boton.innerHTML;
+
     document.cookie = `${planName}`;
     console.log(document.cookie);
-
+    // console.log(boton.type); 
 
 
 }));
+
+
+
 
 
 
